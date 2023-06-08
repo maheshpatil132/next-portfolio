@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
 
-    <div className=' min-h-screen flex items-center md:px-20 py-2 px-12 '>
+    <div className=' min-h-screen flex items-center md:px-16 py-2 px-4 '>
         {/* <!--left part> */}
         <div className=' flex gap-4 flex-col'>
             <h1 className=' text-lg md:text-xl text-gray-700 '>Hey <span className=' text-xl'>👋,</span></h1>

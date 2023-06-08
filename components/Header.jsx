@@ -9,7 +9,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 const Header = () => {
   const str = "< M / P >"
   return (
-    <div className=' fixed top-0 w-full border-b flex items-center justify-between py-4 px-12 md:px-[5rem]'>
+    <div className=' fixed top-0 w-full border-b flex items-center justify-between py-4 px-4 md:px-[4rem]'>
         <div className="logo">
             <h1 className=' font-medium text-2xl'> {str}  </h1>
         </div>
@@ -22,7 +22,7 @@ const Header = () => {
                   <WbSunnyIcon/>
                   <DarkModeIcon/>
             </ul>
-            <HiOutlineMenuAlt3 className=' md:hidden ' fontSize={'24px'} />
+            <HiOutlineMenuAlt3 className=' sm:hidden ' fontSize={'24px'} />
         </nav>
     </div>
   )
