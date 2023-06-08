@@ -14,7 +14,7 @@ const Header = () => {
             <h1 className=' font-medium text-2xl'> {str}  </h1>
         </div>
         <nav className=' flex items-center'>
-            <ul className=' hidden md:flex items-center gap-6'>
+            <ul className=' hidden sm:flex items-center gap-6'>
                 <li className=' cursor-pointer p-1 px-4 hover:text-blue-500 rounded-md'>Home</li>
                 <li className=' cursor-pointer p-1 px-4 hover:text-blue-500 rounded-md'>About</li>
                 <li className=' cursor-pointer p-1 px-4 hover:text-blue-500 rounded-md'>Projects</li>
