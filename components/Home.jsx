@@ -18,15 +18,15 @@ const Home = () => {
           <div className=' flex items-center gap-4'>
             {/* <button className=' w-fit bg-[#5b49df]  text-white rounded-md px-4 py-2'>Get In Touch</button> */}
             <div className=' flex items-center gap-3'>
-            <div className='cursor-pointer border p-2 border-blue-500 bg-blue-500 rounded-full'>
-              <Linkedin  size={18} strokeWidth={2} color='white' />
-            </div>
-            <div className='cursor-pointer border p-2 bg-gray-800 rounded-full'>
-              <Github size={18} strokeWidth={2} color='white' />
-            </div>
-            <div className=' cursor-pointer border p-2 bg-pink-500 rounded-full'>
-              <Instagram size={18} strokeWidth={2} color='white' />
-            </div>
+              <div className='cursor-pointer border p-2 border-blue-500 bg-blue-500 rounded-full'>
+                <Linkedin size={18} strokeWidth={2} color='white' />
+              </div>
+              <div className='cursor-pointer border p-2 bg-gray-800 rounded-full'>
+                <Github size={18} strokeWidth={2} color='white' />
+              </div>
+              <div className=' cursor-pointer border p-2 bg-pink-500 rounded-full'>
+                <Instagram size={18} strokeWidth={2} color='white' />
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Home = () => {
 
         {/* <!-- right part> */}
 
-        <Image src={mahesh} alt='Image' width={500} height={500} />
+        <Image src={mahesh} alt='Image' placeholder='blur' blurDataURL={'../app/assets/coders.gif'} width={500} height={500} />
 
         {/* <!-- right part> */}
       </div>
