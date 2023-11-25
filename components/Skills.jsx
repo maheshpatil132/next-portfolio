@@ -4,7 +4,7 @@ import mahesh from '../app/assets/mahesh.png'
 
 const Skills = () => {
   return (
-    <div className=' min-h-screen mt-10 md:px-16 py-10 px-4'>
+    <div className=' min-h-screen mt-10 md:px-16 py-10 px-2'>
         <h1 className=' text-center font-bold text-3xl mb-10'>ABOUT</h1>
 
         {/* <!--contailer--> */} 
@@ -16,7 +16,7 @@ const Skills = () => {
             {/* <!== left part> */}
 
             {/* <!== Right part> */}
-            <div className=' px-8 flex gap-2  items-start flex-col'>
+            <div className=' px-2 flex gap-2  items-start flex-col'>
                <h1 className=' font-medium text-4xl my-4 text-blue-500'>Mahesh Patil</h1>
                <p className=' text-gray-500  text-lg'>
                  Hi, There 👋
