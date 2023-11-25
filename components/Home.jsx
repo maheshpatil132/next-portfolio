@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import mahesh from '../app/assets/coders.gif'
 import { Linkedin } from 'lucide-react'
 import { Github } from 'lucide-react'
 import { Instagram } from 'lucide-react'
@@ -34,7 +33,7 @@ const Home = () => {
 
         {/* <!-- right part> */}
 
-        <Image src={mahesh} alt='Image' placeholder='blur' blurDataURL={'../app/assets/coders.gif'} width={500} height={500} />
+        <Image src={'/coders.gif'} alt='Image' placeholder='blur' blurDataURL={'../app/assets/coders.gif'} width={500} height={500} />
 
         {/* <!-- right part> */}
       </div>
