@@ -36,8 +36,8 @@ const Header = () => {
     },]
 
   return (
-    <div className=' bg-white z-50 fixed top-0 w-full pt-5 px-2 md:px-[3rem]'>
-    <div className=' flex border p-3 px-6 rounded-full w-full items-center justify-between' >
+    <div className=' header z-50 fixed top-0 w-full pt-5 px-2 md:px-[3rem]'>
+    <div className=' bg-white flex border p-3 px-6 rounded-full w-full items-center justify-between' >
       <div className="logo">
         <h1 className=' font-medium text-2xl'> {str}  </h1>
       </div>
