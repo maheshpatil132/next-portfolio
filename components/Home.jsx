@@ -33,7 +33,7 @@ const Home = () => {
 
         {/* <!-- right part> */}
 
-        <Image src={'/coders.gif'} alt='Image' placeholder='blur' blurDataURL={'../app/assets/coders.gif'} width={500} height={500} />
+        <Image src={'/coders.gif'} alt='Image' placeholder='blur' blurDataURL={'/coders.gif'} width={500} height={500} />
 
         {/* <!-- right part> */}
       </div>
