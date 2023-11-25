@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
 
-      <div className=' min-h-screen lg:mt-14 justify-center flex-col-reverse lg:flex-row flex lg:justify-between  gap-3 lg:gap-10 items-center md:px-16 sm:py-2 px-4 '>
+      <div className=' min-h-screen mt-10 lg:mt-14 justify-center flex-col-reverse lg:flex-row flex lg:justify-between  gap-3 lg:gap-10 items-center md:px-16 sm:py-2 px-4 '>
         {/* <!--left part> */}
         <div className=' lg:w-1/2  flex gap-4 flex-col'>
           <h1 className=' text-2xl md:text-3xl font-medium '>Hey <span className='text-3xl'>👋,</span></h1>
