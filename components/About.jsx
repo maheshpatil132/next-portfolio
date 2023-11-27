@@ -116,7 +116,7 @@ const About = () => {
 
 
   return (
-    <div id='about' className=' bg-purple-200 mx-2 mt-8 lg:mt-2 lg:mx-12 rounded-3xl shadow-xl min-h-screen md:px-16 py-24 px-4'>
+    <div id='about' className=' bg-purple-100 mx-2 mt-8 lg:mt-20 lg:mx-14 rounded-3xl shadow-xl min-h-screen md:px-16 py-24 px-4'>
       <h1 className='text-center text-3xl font-bold mb-14'>SKILLS</h1>
       <div className=' w-full border sm:gap-8  gap-3  xl:w-[40%] mb-20 flex bg-white  justify-between px-3 md:px-3 py-2 mx-auto rounded-2xl'>
         <button 
@@ -135,7 +135,7 @@ const About = () => {
           Backend
         </button>
       </div>
-      <div className="grid grid-cols-2 sm:place-items-center sm:grid-cols-3 gap-6  lg:grid-cols-6  sm:text-lg">
+      <div className="grid grid-cols-2 sm:place-items-center sm:grid-cols-3 gap-6  lg:grid-cols-5  sm:text-lg">
 
         {
           skiilset.map((elem, index) => {
