@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 
 
 const projects = [
@@ -50,15 +51,16 @@ const projects = [
 ]
 
 const Projects = () => {
+    const [more, setMore] = useState(false)
     return (
-        <div className=' px-16'>
-            <h1 className='text-center font-bold text-3xl mb-12'>Projects</h1>
-            <div className=' py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-4'>
+        <div className=' w-full flex flex-col px-16 py-24 '>
+            <h1 className='text-center w-full font-bold text-3xl my-16'>Projects</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-8'>
                 {
                     projects.map((elem, index) => {
                         return (
-
-                            <div className='border w-72 flex flex-col rounded-lg'>
+                           <>{ (more===false ? index < 8 : true) &&
+                            <div className='border shadow-lg h-full w-72 flex flex-col rounded-lg'>
                                 <div className=' h-44 w-full rounded-t-lg bg-slate-300'>Image</div>
                                 <div className=' p-3'>
                                     <h1 className=' font-medium text-lg mb-4'>{elem.title}</h1>
@@ -68,8 +70,8 @@ const Projects = () => {
                                             elem.stack.map((skills , ind)=>{
                                                 return(
 
-                                                    <div className=' px-4 border-purple-400 bg-purple-50 py-1 rounded-full border'>
-                                                        <p className=' text-sm'>{skills}</p>
+                                                    <div className=' px-4 border-2 border-purple-300  bg-purple-200 py-1 rounded-full '>
+                                                        <p className=' text-black text-sm'>{skills}</p>
                                                     </div>
                                                 )
                                             })
@@ -77,12 +79,16 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
+                        
+}
+                            </>
 
                         )
                     })
 
                 }
             </div>
+            <button onClick={()=> setMore(!more)} className=' px-5 animate-bounce py-2 bg-violet-500 text-white rounded-full mx-auto'>{ more ? "View Less" : "View More"}</button>
         </div>
     )
 }

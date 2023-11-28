@@ -116,9 +116,9 @@ const About = () => {
 
 
   return (
-    <div id='about' className=' bg-purple-100 mx-2 mt-8 lg:mt-20 lg:mx-14 rounded-3xl shadow-xl min-h-screen md:px-16 py-24 px-4'>
+    <div id='about' className=' bg-purple-100 dark:bg-[#282828]  g mx-2 mt-8 lg:mt-20 lg:mx-14 rounded-3xl shadow-xl min-h-screen md:px-16 py-24 px-4'>
       <h1 className='text-center text-3xl font-bold mb-14'>SKILLS</h1>
-      <div className=' w-full border sm:gap-8  gap-3  xl:w-[40%] mb-20 flex bg-white  justify-between px-3 md:px-3 py-2 mx-auto rounded-2xl'>
+      <div className=' text-black w-full border sm:gap-8  gap-3  xl:w-[40%] mb-20 flex bg-white  justify-between px-3 md:px-3 py-2 mx-auto rounded-2xl'>
         <button 
         onClick={All} 
         className={` flex-1  ${type === 1 ? 'bg-code-secondary' : 'hover:bg-slate-100' }  px-2 md:px-6 py-2 rounded-md`}>
@@ -143,7 +143,7 @@ const About = () => {
               <div key={index} className=' hover:-translate-y-3 gap-2 hover:shadow-lg transition-all bg-white flex-col flex justify-center items-center py-4 sm:w-32 rounded-3xl  border border-slate-200 shadow-sm'>
                 
                 <Image src={`${elem.img}`} alt='image' height={50} width={50}/>
-                <h6 className=' text-sm font-medium'>{elem.skill}</h6>
+                <h6 className=' text-sm font-medium text-black'>{elem.skill}</h6>
               </div>
             )
           }) 

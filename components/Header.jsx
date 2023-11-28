@@ -1,16 +1,16 @@
 "use client"
 
-import React from 'react'
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import React, { useEffect } from 'react'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { Icon } from '@mui/material';
+import { Sun } from 'lucide-react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
 import Link from 'next/link';
+import { useTheme } from 'next-themes'
 
 const Header = () => {
   const str = "< M / P >"
 
-
+  const { theme, setTheme } = useTheme()
 
   // Menus List //
   const menus = [
@@ -34,10 +34,12 @@ const Header = () => {
       menu: 'Contact',
       to: '#contact'
     },]
+    
+  
 
   return (
     <div className=' header z-50 fixed top-0 w-full pt-5 px-2 md:px-[3rem]'>
-    <div className=' bg-white flex border p-3 px-6 rounded-full w-full items-center justify-between' >
+    <div className='bg-white dark:bg-[#121212] flex border p-3 px-6 rounded-full w-full items-center justify-between' >
       <div className="logo">
         <h1 className=' font-medium text-2xl'> {str}  </h1>
       </div>
@@ -56,8 +58,17 @@ const Header = () => {
 
         </ul>
         {/* <WbSunnyIcon/> */}
-        <DarkModeIcon className=' ml-6' />
-        <HiOutlineMenuAlt3 className=' sm:hidden ml-4 ' fontSize={'24px'} />
+        {
+          theme === 'light' ?
+
+           <DarkModeIcon onClick={() => setTheme('dark')}  className=' ml-6 cursor-pointer' />
+            :
+            <Sun onClick={() => setTheme('light')} className=' cursor-pointer ml-6'/>
+        }
+
+          <HiOutlineMenuAlt3  className=' sm:hidden ml-4 ' fontSize={'24px'} />
+
+
       </nav>
     </div>
     </div>
